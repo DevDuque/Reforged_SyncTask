@@ -1,0 +1,37 @@
+{BaseURL} -> http://localhost:8080 
+
+{Create user} -> BaseURL/users/ {POST METHOD}
+JSON -> {
+	"name": "Davih Duque",
+	"username": "Duque",
+	"password": "1234"
+}
+
+{Create task} -> BaseURL/tasks/ {POST METHOD} (BASIC AUTH NEEDED)
+JSON -> {
+	"description": "Tarefa N1",
+	"title": "Tarefa 1",
+	"priority": "ALTA",
+	"startAt": "2023-11-15T15:30:00",
+	"endAt": "2023-11-15T19:30:00"
+}
+
+{GetTaskByUser} -> BaseURL/tasks/ {GET METHOD} (BASIC AUTH NEEDED)
+RETURN
+
+{UptadeTask} -> BaseURL/tasks/{TaskID} {PUT METHOD} (BASIC AUTH NEEDED)
+JSON -> {
+    "description": "Tarefa N1",
+	"title": "Tarefa 1",
+	"priority": "ALTA",
+	"startAt": "2023-11-15T15:30:00",
+	"endAt": "2023-11-15T19:30:00"
+}
+
+
+See the h2-console, the server save
+
+Driver Class:	org.h2.Driver
+JDBC URL:	jdbc:h2:mem:todolist
+User Name:	admin
+Password:	admin
