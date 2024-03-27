@@ -6,7 +6,7 @@ export default function LoginPage() {
         <main>
             <section className="flex w-screen h-screen flex-col justify-center items-center">
 
-                <div className="">
+                <div className="flex flex-col items-center">
                     <Image
                         src={AppLogo}
                         height={150}
@@ -20,7 +20,9 @@ export default function LoginPage() {
 
                 <div>
                     <h2 className="inline-block font-bold tracking-wider border-b-4 border-purple-400 mb-2"> LOGIN </h2>
+
                     <form action="" id="LoginForm" className="w-full max-w-md">
+
                         <div className="flex flex-col">
                             <input
                                 type="text"
@@ -41,7 +43,7 @@ export default function LoginPage() {
                                     type="submit"
                                     value="Entrar"
                                     form="LoginForm"
-                                    className="w-28 h-8 mt-3 border-transparent rounded-xl font-bold bg-notation-yellow text-purple-500"
+                                    className="w-28 h-8 mt-3 border-transparent rounded-md font-bold bg-notation-yellow text-purple-500 cursor-pointer transition-colors hover:bg-notation-yellowHover"
                                 />
                             </div>
                         </div>

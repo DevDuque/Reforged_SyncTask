@@ -24,6 +24,7 @@ const config: Config = {
       
         notation: {
           "yellow": "#F8C630",
+          "yellowHover": "#F9D159",
           "green": "#1D9113",
           "orange": "#EC8525",
         },
