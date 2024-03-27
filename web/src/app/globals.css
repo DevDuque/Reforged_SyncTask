@@ -8,5 +8,9 @@
 
     box-sizing: border-box;
     font-family: 'Bai Jamjuree', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 20px;
+
+    background-color: #22162B;
+    color: #B8A6C8;
 }
